@@ -1,18 +1,18 @@
 {
   "globalDependencies": {
-    "angular": "registry:dt/angular#1.5.0+20160517064839",
-    "angular-route": "registry:dt/angular-route#1.3.0+20160317120654",
-    "bootstrap": "registry:dt/bootstrap#3.3.5+20160316155526",
-    "jquery": "registry:dt/jquery#1.10.0+20160417213236",
+    "angular": "registry:dt/angular#1.5.0+20160725073351",
+    "angular-ui-router": "registry:dt/angular-ui-router#1.1.5+20160707113237",
+    "bootstrap": "registry:dt/bootstrap#3.3.5+20160619023404",
+    "jquery": "registry:dt/jquery#1.10.0+20160704162008",
     "jwt-decode": "registry:dt/jwt-decode#1.4.0+20160317120654",
     "source-map": "registry:dt/source-map#0.0.0+20160317120654",
-    "uglify-js": "registry:dt/uglify-js#2.6.1+20160316155526"
+    "uglify-js": "registry:dt/uglify-js#2.6.1+20160316155526",
+    "lodash": "registry:dt/lodash#3.10.0+20160720001309"
   },
   "dependencies": {
-    "lodash": "registry:npm/lodash#4.0.0+20160416211519"
   },
   "globalDevDependencies": {
-    "angular-mocks": "registry:dt/angular-mocks#1.3.0+20160425155016",
-    "jasmine": "registry:dt/jasmine#2.2.0+20160505161446"
+    "angular-mocks": "registry:dt/angular-mocks#1.5.0+20160608104721",
+    "jasmine": "registry:dt/jasmine#2.2.0+20160621224255"
   }
 }

@@ -1,10 +1,11 @@
 {
+  "private": true,
   "name": "angular-typescript-webpack",
   "version": "0.1.2",
   "description": "A seed project for a largescale angular architecture in webpack and typescript",
   "main": "/",
   "scripts": {
-    "start": "webpack --config webpack/webpack.dev.js --watch --NODE_ENV=dev",
+    "start": "webpack-dev-server --config webpack/webpack.dev.js --watch --NODE_ENV=dev",
     "test": "karma start --NODE_ENV=test",
     "build": "webpack --config webpack/webpack.build.js --NODE_ENV=production",
     "postinstall": "typings i"
@@ -13,7 +14,7 @@
   "license": "MIT",
   "dependencies": {
     "angular": "1.5.5",
-    "angular-route": "1.5.5",
+    "angular-ui-router": "1.0.0-beta.1",
     "bootstrap": "3.3.6",
     "font-awesome": "4.6.1",
     "jquery": "2.2.4",
@@ -24,7 +25,7 @@
     "babel-core": "6.9.0",
     "babel-istanbul": "0.8.0",
     "browser-sync": "2.12.8",
-    "browser-sync-webpack-plugin": "1.0.1",
+    "browser-sync-webpack-plugin": "~1.0.1",
     "compression-webpack-plugin": "0.3.1",
     "css-loader": "0.23.1",
     "file-loader": "0.8.5",
@@ -50,7 +51,7 @@
     "typescript": "1.8.10",
     "typings": "1.0.4",
     "url-loader": "0.5.7",
-    "wallaby-webpack": "0.0.22",
-    "webpack": "1.13.1"
+    "webpack": "1.13.1",
+    "webpack-dev-server": "1.13.1"
   }
 }
