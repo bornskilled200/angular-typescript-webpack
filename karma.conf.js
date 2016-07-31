@@ -1,13 +1,13 @@
 'use strict';
 
 var webpackConfig = require('./webpack/webpack.test.js');
-require('phantomjs-polyfill')
+require('phantomjs-polyfill');
 webpackConfig.entry = {};
 
 module.exports = function (config) {
     config.set({
         basePath: '',
-        frameworks: ['jasmine'],
+        frameworks: ['jasmine', 'jasmine-matchers', 'jasmine-jquery-matchers'],
         port: 9876,
         colors: true,
         logLevel: config.LOG_INFO,
