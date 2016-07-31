@@ -24,13 +24,16 @@ module.exports = {
         }),
         new BrowserSyncPlugin({
             host: 'localhost',
-            port: 8080,
-            server: {
-                baseDir: 'dist'
-            },
+            port: 8081,
             ui: false,
             online: false,
-            notify: false
+            notify: false,
+            proxy: 'http://localhost:8080/'
+        },
+        {
+            // prevent BrowserSync from reloading the page
+            // and let Webpack Dev Server take care of this
+            reload: false
         }),
         new webpack.ProvidePlugin({
             $: 'jquery',
