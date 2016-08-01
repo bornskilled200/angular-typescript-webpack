@@ -17,7 +17,7 @@ module.exports = function (config) {
         autoWatchBatchDelay: 300,
         files: [
             './node_modules/phantomjs-polyfill/bind-polyfill.js',
-            './src/test.ts'
+            './spec/test.ts'
         ],
         babelPreprocessor: {
             options: {
@@ -25,8 +25,8 @@ module.exports = function (config) {
             }
         },
         preprocessors: {
-            'src/test.ts': ['webpack'],
-            'src/**/!(*.spec)+(.js)': ['coverage']
+            'spec/test.ts': ['webpack'],
+            'spec/**/!(*.spec)+(.js)': ['coverage']
         },
         webpackMiddleware: {
             stats: {

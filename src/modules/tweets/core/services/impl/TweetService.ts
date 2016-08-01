@@ -1,10 +1,14 @@
 import {Tweet} from "../../entities/Tweet";
 export class TweetService {
-    public getAll(): Array<Tweet> {
-        var returnObj: Array<Tweet> = new Array<Tweet>();
+    private tweets:Array<Tweet> = [];
+
+    constructor() {
         for (var i: number = 0; i < 5; i++) {
-            returnObj.push(new Tweet("@user", "Content", false));
+            this.tweets.push(new Tweet("@user", "Content", false));
         }
-        return returnObj;
+    }
+
+    public getAll(): Array<Tweet> {
+        return this.tweets;
     }
 }
