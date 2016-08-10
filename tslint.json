@@ -1,9 +1,6 @@
 {
   "rules": {
-    "align": [false,
-      "parameters",
-      "arguments",
-      "statements"],
+    "align": true,
     "ban": false,
     "class-name": true,
     "comment-format": [true,
@@ -14,7 +11,7 @@
     "eofline": false,
     "forin": false,
     "indent": [true, "spaces"],
-    "interface-name": [true, "always-prefix"],
+    "interface-name": true,
     "jsdoc-format": true,
     "label-position": true,
     "label-undefined": true,
@@ -64,7 +61,7 @@
     ],
     "quotemark": [true, "double"],
     "radix": true,
-    "semicolon": [true, "always"],
+    "semicolon": true,
     "switch-default": true,
     "triple-equals": [true, "allow-null-check"],
     "typedef": [true,
@@ -81,10 +78,7 @@
       "property-declaration": "nospace",
       "variable-declaration": "nospace"
     }],
-    "use-strict": [false,
-      "check-module",
-      "check-function"
-    ],
+    "use-strict": true,
     "variable-name": false,
     "whitespace": [true,
       "check-branch",
